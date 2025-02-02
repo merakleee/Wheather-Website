@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 1%, 75%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.WeatherForm{
+    margin: 20px;
+}
+.cityinput{
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid hsla(0, 0%, 20%, 0.4);
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+}
+button[type="submit"]{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: hsl(120, 71%, 46%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover{
+    background-color: hsl(120, 71%, 30%);
+}
+.card{
+    background: linear-gradient(180deg , rgb(2, 202, 253),rgb(0, 255, 110));
+    padding: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.603);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+p{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.Cdisplay, .Tdisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.753);
+    margin-bottom: 25px;
+}
+.Hdisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.Ddisplay{
+    font-style: italic ;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.Wemoji{
+    margin: 0;
+    font-size: 7.5rem;
+}
+.errord{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.79);
+}
