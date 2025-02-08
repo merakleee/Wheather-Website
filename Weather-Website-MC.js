@@ -2,7 +2,7 @@
 const WeatherForm = document.querySelector(".WeatherForm");
 const cityInput = document.querySelector('.cityinput');
 const card = document.querySelector('.card');
-const apiKey = "e849f884967c248dfa448e7d0af1b1d2"; // Renamed to apiKey for clarity
+const apiKey = "e849f884967c248dfa448e7d0af1b1d2";
 
 WeatherForm.addEventListener("submit", async event => {
     event.preventDefault();
@@ -22,13 +22,13 @@ WeatherForm.addEventListener("submit", async event => {
 });
 
 async function getWeatherData(city) {
-    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`; // Updated API URL
+    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     const response = await fetch(apiURL);
 
     if (!response.ok) {
         throw new Error("Could not fetch weather data");
     }
-    return await response.json(); // Added await to parse JSON
+    return await response.json(); 
 }
 
 function displayWeatherInfo(data) {
